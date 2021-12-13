@@ -93,3 +93,222 @@ header{
     filter: grayscale(100%);
 }
 
+
+
+/* esercizio 7 */
+.Md3-7{
+    transition: all 1.0s linear;
+}
+
+.Md3-7:hover{
+    filter: sepia(80%);
+}
+
+
+
+/* esercizio 8 */
+.Md3-8:hover{
+    border-radius: 40px;
+}
+
+
+
+/* esercizio 9 */
+.Md3-9{
+    transform: scale(0.5);
+}
+
+.Md3-9:hover{
+    transform: scale(1);
+}
+
+
+
+/* esercizio 10 */
+.fa-circle-notch{
+    text-align: left;
+    font-size: 40px;
+}
+
+.Md4-10{
+    animation: giro 4s linear infinite;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(-1turn);
+        
+    }
+}
+
+
+
+/* esercizio 11 */
+.Md4-11:hover{
+    animation: giro2 4s linear;
+}
+
+@keyframes giro2 {
+    0% {
+        transform: rotate(0deg); 
+    }
+
+    95% {
+        transform: rotate(300deg); 
+    }
+
+    100% {
+        transform: rotate(0deg); 
+    }
+}
+
+
+
+/* esercizio 12 */
+.Md5-12, .Md5-13{
+    position: relative;
+    border: 2px solid black;
+    color: black;
+    padding: 20px 30px;
+    margin: 20px;
+    font-size: 30px;
+    display: inline-block;
+}
+
+
+[class*="Me5-12"]{
+    position: absolute;
+}
+
+.Me5-12-up, .Me5-13-up{
+    width: 50px;
+    height: 20px;
+    background-color: rgb(238, 238, 238);
+    top: -10px;
+    left: 10px;
+}
+
+.Me5-12-bottom, .Me5-13-bottom{
+    width: 50px;
+    height: 20px;
+    background-color: rgb(238, 238, 238);
+    bottom: -10px;
+    right: 10px;
+}
+
+.Md5-12:hover .Me5-12-bottom{
+    animation: movimento1 1s linear;
+}
+
+@keyframes movimento1 {
+    0% {
+        right: 0; 
+    }
+
+    50% {
+        bottom: -10px;
+        right: 60%; 
+    }
+
+    100% {
+        right: 0; 
+    }
+}
+
+.Md5-12:hover .Me5-12-up{
+    animation: movimento2 1s linear;
+}
+
+@keyframes movimento2 {
+    0% {
+        left: 0; 
+    }
+
+    50% {
+        top: -10px;
+        left: 60%; 
+    }
+
+    100% {
+        left: 0; 
+    }
+}
+
+
+
+/* esercizio 13 */
+[class*="Me5-13"]{
+    position: absolute;
+}
+
+.Md5-13:hover .Me5-13-bottom{
+    animation: movimento3 3s linear;
+}
+
+@keyframes movimento3 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    20% {
+        bottom: -10px;
+        right: 85%;
+    }
+
+    40%{
+        bottom: 90%;
+        right: 85%;
+    }
+
+    60%{
+        bottom: 90%;
+        right: -30px;
+    }
+
+    80%{
+        bottom: -10%;
+        right: -30px;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
+.Md5-13:hover .Me5-13-up{
+    animation: movimento4 3s linear;
+}
+
+@keyframes movimento4 {
+    0% {
+        top: -10px;
+        left: 20%;
+    }
+
+    20% {
+        top: -10px;
+        left: 85%;
+    }
+
+    40%{
+        top: 90%;
+        left: 85%;
+    }
+
+    60%{
+        top: 90%;
+        left: -30px;
+    }
+
+    80%{
+        top: -10%;
+        left: -30px;
+    }
+
+    100% {
+        top: -10px;
+        left: 20%;
+    }
+}
