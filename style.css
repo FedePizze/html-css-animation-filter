@@ -27,3 +27,69 @@ header{
     padding: 20px;
     margin: 15px 0;
 }
+
+[class*="Md1"]{
+    border: 2px solid red;
+    transition: all 0.5s linear;
+    width: 100px;
+    height: 100px; 
+}
+
+
+[class*="Md2"]{
+    background-color: red;
+    transition: all 0.5s linear;
+    width: 100px;
+    height: 100px; 
+}
+
+
+
+/* esercizio 1 */
+.Md1-1:hover{
+    background-color: red;
+}
+
+
+
+/* esercizio 2 */
+.Md2-2:active{
+    width: 100%;
+}
+
+
+
+/* esercizio 3 */
+.Md2-3:hover{
+    border-radius: 50%;
+}
+
+
+
+/* esercizio 4 */
+.Md2-4:hover{
+    opacity: 0;
+}
+
+
+
+/* esercizio 5 */
+.Md2-5{
+    transform: scale(0.7)
+}
+
+.Md2-5:hover{
+    transform: scale(1.2)
+}
+
+.Md2-5:active{
+    transform: scale(0.3)
+}
+
+
+
+/* esercizio 6 */
+.Md3-6:hover{
+    filter: grayscale(100%);
+}
+
